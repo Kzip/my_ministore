@@ -1,0 +1,17 @@
+<table>
+  <tr>
+    <td>name</td>
+    <td>order</td>
+  </tr>
+  <tr ng-repeat="customer in customers | filter:filter_name | orderBy:'name'">
+    <td>{{customer.name}}</td>
+    <td>{{customer.age}}</td>
+  </tr>
+
+</table>
+<h3>Add a new customer!</h3>
+<form>
+    Name: <input type='text' ng-model='newStudent.name'>
+    Age: <input type='text' ng-model='newStudent.age'>
+    <input type='submit' value='add new student' ng-click='addStudent()'>
+</form>

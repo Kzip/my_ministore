@@ -1,0 +1,22 @@
+<html ng-app ="myApp">
+<head>
+  <title></title>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-route.min.js"></script>
+   <script src='script.js'></script>
+</head>
+<body ng-controller = "mainController">
+  <ul class="nav navbar-nav navbar-right">
+                   <li><a href="#all"><i class="fa fa-home"></i> All</a></li>
+                   <li><a href="#orders"><i class="fa fa-shield"></i> Orders</a></li>
+                   <li><a href="#customers"><i class="fa fa-comment"></i> Customers</a></li>
+  </ul>
+    <div id="main">
+      {{main}}
+      <div ng-view></div>
+
+
+    </div>
+
+</body>
+</html>
